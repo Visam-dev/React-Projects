@@ -9,7 +9,7 @@ function App() {
   age: 20,
   email: "wisamahmed02@gmail.comm"
  }
-
+ const [color, setColor] = useState("olive")
   return (
     <>
     <CardNew username="visam" pricing="1.1"/>
@@ -21,7 +21,7 @@ function App() {
           className="rounded-t-xl"
         />
         <div className="glass py-4 px-5 relative -top-[3.4rem]  rounded-b-xl z-10 mb-4">
-          <h1 className="font-bold  font-mono  text-xl  p-3">soon</h1>
+          <h1 className="font-bold  font-mono  text-xl  p-3" style={{backgroundColor: color}}>soon</h1>
         </div>
       </div>
     </>
